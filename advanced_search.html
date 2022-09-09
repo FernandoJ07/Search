@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+
+            body{
+                font-family: arial
+            }
+
+            .nav{
+                text-align: right;
+                padding: 15px 20px; 
+
+
+            }
+
+            .nav img{
+                float: left;
+            }
+
+            .nav > a{
+                font-family: arial;
+                font-size: 14px;
+                margin: 0px 5px;
+                text-decoration: none;
+                color: rgba(0,0,0,0.87);
+            }
+
+            .nav > a:hover{
+                text-decoration: underline;
+            }
+
+            .titulo > label{
+                color: #db0000;
+                font-size: 20px;
+            }
+
+            .titulo{
+                padding: 45px 0px 20px 45px;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+
+            .container{
+                padding: 25px 50px;
+                font-size: 14px;
+            }
+
+            .content{
+                width: 80%;
+            }
+
+            .labels{
+                width: 20%;
+                line-height: 50px;
+                float: left
+            }
+
+            .inputs{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                font-size:16px; 
+                
+            }
+
+            .inputs > input{
+                margin: 10px 0px; 
+                padding: 6px 10px;
+                border: 1px solid rgba(0,0,0,0.2);
+                outline-color: blue;
+            }
+
+            input[type='submit']{
+                margin-left: 350px; 
+                width: 30%;
+                color: white;
+                font-weight: bold;
+                float: right;
+                padding: 10px 15px;
+                background-color: #4086ff;
+                border: 0px; 
+            }
+
+            input[type='submit']:hover{
+                background-color: #2373fc;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+
+
+        <div class="nav">
+            <img src="https://www.google.com.co/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" width="90px;">
+
+            <a href="index.html">Google Search</a>
+        </div>
+
+        <div class="titulo">
+            <label>Advanced Search</label>
+        </div>
+
+
+        <div class="container">
+
+            <p style="margin-bottom: 15px; font-size: 17px;">Find pages with...</p>
+                
+            <form action="https://google.com/search">
+                
+                <div class="content">
+                   <div class="labels">
+                
+                        <label for="all">All these words:</label><br> 
+                        <label for="exact">This exact word or phrase:</label><br>
+                        <label for="any">Any of these words:</label><br>
+                        <label for="none">None of these words:</label><br>
+
+                    </div>
+
+                    <div class="inputs">
+                        <input type="text" name="q" id="all">
+                        <input type="text" name="q" id="exact">
+                        <input type="text" name="q" id="any">
+                        <input type="text" name="q" id="none">
+                        <input type="submit" value="Advanced Search">  
+                    </div>
+        
+ 
+
+                </div>
+                
+            </form>  
+           
+
+
+
+              
+
+        </div>
+
+    </body>
+</html>
